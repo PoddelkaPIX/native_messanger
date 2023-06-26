@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
+    "name": "GAMessanger",
+    "slug": "gamessanger",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +18,28 @@
       "supportsTablet": true
     },
     "android": {
+      "useNextNotificationsApi": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.poddelka.gamessanger"
+    },
+    "packagerOpts": {
+      "sourceExts": [
+        "js",
+        "jsx"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "cors": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7ad4960e-a50c-4a11-8c9c-5c446e0c9649"
+      }
+    },
+    "owner": "poddelka"
   }
 }
